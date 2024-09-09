@@ -72,3 +72,126 @@ img {
 
 
 /* Code CSS for your project */
+
+/*: Styles for Section Navbar */
+.navbar {
+    background-color: var(--colorSecundario);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (width >= 768px) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+h1 {
+    margin: calc(var(--separacion) / 2) 0 0 0;
+}
+
+@media (width >= 768px) {
+    h1 {
+        margin: calc(var(--separacion) / 2);
+    }
+}
+
+.nav-links {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.nav-links a {
+    color: var(--colorFuente);
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: var(--colorPrimario);
+}
+
+
+/* Styles for Section Hero */
+
+.hero-section{
+    background-color: var(--colorSecundario);
+}
+
+.hero-text{
+    margin-top: calc(var(--separacion) / 2);
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    color: var(--colorFuente);
+    word-spacing: 0.2rem;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: calc( var(--separacion) / 2);
+}
+
+.btn {
+    padding: 0.7rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--colorTerciario);
+    color: var(--colorPrimario);
+}
+.btn-primary:hover{
+    background-color:var(--colorTerciarioHover) ;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 0.2rem solid white;
+    transition: all 0.3s ease
+}
+.btn-secondary:hover{
+    background-color:var(--colorPrimario);
+    color:var(--colorSecundario);
+}
+
+.hero-image{
+    display: none;
+}
+
+@media (width >= 768px) {
+    .hero-image{
+        display: block;
+        width: 50rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero-content{
+        max-width: 50%;
+    }
+    h2{
+        font-size: 4.5rem;
+    }
+    .hero-text p {
+        margin: var(--separacion) 0;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .hero-buttons{
+        justify-content: start;
+    }
+}
