@@ -1,0 +1,74 @@
+/* Declaration of variables CSS */
+:root {
+    --colorPrimario: #f8f9fa;
+    --colorSecundario: #212529;
+    --colorTerciario: #0d6efd;
+    --colorFuente:#ffffff80;
+    --colorFuenteSecundario:#212529bf;
+    --colorTerciarioHover:#0a58ca;
+    --coloBoton:#198754;
+    --coloBotonHover:#146c43;
+
+    --separacion: 5rem; 
+
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundaria: "Lato", sans-serif;;
+}
+
+/* General styles for the document HTML  */
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/* Assures all elements use the same box-sizing */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* General styles for the body of document HTML */
+body {
+    font-family: var(--fuentePrincipal); 
+    font-size: 1.6rem; 
+    line-height: 1.5;
+}
+
+/* Styles for containers */
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* General styles for headers */
+h1, h2, h3 {
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    color: var(--colorPrimario);
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+/* General styles for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Utilities class */
+.text-center {
+    text-align: center;
+}
+
+
+/* Code CSS for your project */
