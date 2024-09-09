@@ -342,3 +342,10 @@ h4{
     background-color: var(--coloBotonHover);
 }
 
+
+
+/* Styles for Section Footer */
+footer{
+    background-color: var(--colorSecundario);
+    color: var(--colorFuente);
+}
